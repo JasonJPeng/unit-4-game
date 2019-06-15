@@ -3,13 +3,58 @@
 <head>
 <title>Crystals Collector Game</title>
 <meta charset="utf-8">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<!-- Added a link to Bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  
   <script type="text/javascript" src="assets/javascript/game.js"></script>
-
 </head>
 <body>
+ <div class="container">
+   <div class="row"> 
+    <div class="col">
+      Instruction :
+    </div>
+   </div>
+
+   <div class="row">
+     <div class = "col-8">
+       <span id = "target">98</span> 
+     </div>
+     <div class ="col-4">
+       wins: <span id ="wins">1</span>
+       loss: <span id ="loss">2</span>
+     </div>
+   </div>
+
+   <div class="row">
+    <div class="col-3">
+      <span class = "btn" user-data = "0" id="btn1">One</span>
+    </div>
+    <div class="col-3">
+      <span class = "btn" user-data = "0" id="btn2">Two</span>
+    </div>
+    <div class="col-3">
+      <span class = "btn" user-data = "0" id="btn3">Three</span>
+    </div>
+    <div class="col-3">
+      <span class = "btn" user-data = "0" id="btn4">Four</span>
+    </div>
+   </div>
+
+   <div class="row">
+     <div class="col">
+       your total score: <span id = "total"></span>
+     </div>
+   </div>
+
+
+
+ </div>
+
+
 </body>
 </html>
