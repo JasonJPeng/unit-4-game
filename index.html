@@ -4,58 +4,81 @@
 <title>Crystals Collector Game</title>
 <meta charset="utf-8">
 <!-- Added a link to Bootstrap-->
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   
   <script type="text/javascript" src="assets/javascript/game.js"></script>
 </head>
 <body>
- <div class="container">
+ <div class="container container-fluid">
    <div class="row"> 
     <div class="col">
-      Instruction :
+        <!-- <div class="jumbotron jumbotron-fluid"> -->
+            
+              <h1 class="display-4">Crystals Collector Game</h1>
+              <p>You would be given a random number as your target at the start of the game</p>
+              <p>There are 4 crystals below. By clicking on a crystal, you will add a specific amount of points to your 
+                    total score.
+              </p>
+              <p> You win the game by matching  your total score to the random target number. You lose the game
+                if your total score goes beyond the random target number.
+              </p>
+              <p> The value of each crystal is hidden from you but you can know the number when you click it. </p>
+              <p>Each time the game stars, the game will change the number of each crystal as well as the random target number.</p>
+              <p>The game will automatically restart a new game when you win or lose the game. Your score will be kept.</p>
+              <p>Good Luck ! Enjoy the game.</p>
+        <!-- </div> -->
+        
     </div>
    </div>
 
-   <div class="row">
-     <div class = "col-8">
-       Game number <span id="game"></span> Target score: <span id = "target">98</span> 
+   <div class="row gameInfo">
+     <div class = "col-4">
+       <p>Game number <span id="game"></span></p> 
+       <p>Target score: <span id = "target">98</span> </p> 
+     </div>
+     <div class = "col-4">
+       <p id="gameStatus">Game Over</p>
+       <p id="winLoss">You Won</p>
      </div>
      <div class ="col-4">
-       wins: <span id ="wins"></span>
-       loss: <span id ="losses"></span>
+       <p>wins: <span id ="wins"></span></p>
+       <p>loss: <span id ="losses"></span></p>
      </div>
    </div>
 
    <div class="row">
-    <div class="col-3">
+     <div class="col-2"></div>
+    <div class="col-2">
       <span class = "btn" user-data = "0" id="btn1">
         <img class="imgCrystal" src = "assets/images/1.jpeg">
       </span>
     </div>
-    <div class="col-3">
+    <div class="col-2">
       <span class = "btn" user-data = "0" id="btn2">
           <img class="imgCrystal" src = "assets/images/2.jpeg">
       </span>
     </div>
-    <div class="col-3">
+    <div class="col-2">
       <span class = "btn" user-data = "0" id="btn3">
           <img class="imgCrystal" src = "assets/images/3.jpeg">
       </span>
     </div>
-    <div class="col-3">
+    <div class="col-2">
       <span class = "btn" user-data = "0" id="btn4">
           <img class="imgCrystal" src = "assets/images/4.jpeg">
       </span>
     </div>
+    <div class="col-2"></div>
    </div>
 
-   <div class="row">
+   <div class="row gameInfo">
      <div class="col">
-       your current score: <span id = "total"></span>
+       Current score: <span id = "total"></span>
      </div>
    </div>
 

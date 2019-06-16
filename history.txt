@@ -1,9 +1,10 @@
 ToDo:
-  1. counting the number of games  as Game # 2:  Target number
-  2. Keep the score of wins and losses
-  3. add 4 crystals  or more than 4 to choose 
+  ==Done counting the number of games  as Game # 2:  Target number
+  ==Done Keep the score of wins and losses
+  ==Done add 4 crystals  or more than 4 to choose 
   4. randomly pick 4 of 20 cristals (1.jpeg to  20.jpeg) 
-  5. Add jumbotron 
+  ==No Good Add jumbotron 
 
 
   2019-06-15: 20 images they should ahve same background.
+  2019-06-16: The basic graphic design is done

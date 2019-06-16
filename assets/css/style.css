@@ -1,6 +1,34 @@
+
+.container {
+    /* border-style: solid; */
+    /* background-color: aqua; */
+}
+
+body {
+    color: #777777;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size:14px;   
+}
+
 .imgCrystal {
     width:100px;
     height:100;
     margin: 20px;
     object-fit: cover;
+}
+
+p{
+    margin:8px;
+}
+
+.gameInfo {
+    background-color: lightslategray;
+    color:#ffffff;
+    font-size:24pt;
+}
+
+#target , #total{
+    color: blue;
+    font-size: 30pt;
+    font-weight: 900;
 }

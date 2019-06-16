@@ -10,6 +10,11 @@ function init () {
   total = 0;
   game++;
     
+//    setTimeout(function () {
+    // $("#gameStatus").text("Starting...");
+//    }, 2000);
+
+   
    $("#game").text(game);
    target = random(19, 120);
    $("#target").text(target);
@@ -23,6 +28,8 @@ function init () {
    $("#btn3").attr("user-data", btn3);
    btn4 = random(1,12)
    $("#btn4").attr("user-data", btn4);
+
+   $("#gameStatus").text("Game Started");
 
 }
 
@@ -38,11 +45,15 @@ $(".btn").on("click", function() {
    $("#total").text(total);
    
    if (total > target) { // Loss
-      alert ("You lose !!");
+    //   alert ("You lose !!");
+      $("#gameStatus").text("Game Over");
+      $("#winLoss").text("You Lost");
       $("#losses").text(++losses);
       init();
    } else if (total === target) { // win
-      alert ("You win");
+    //   alert ("You win");
+      $("#gameStatus").text("Game Over");
+      $("#winLoss").text("You Won");
       $("#wins").text(++wins);
       init();
 
