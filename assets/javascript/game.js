@@ -7,6 +7,8 @@ function random(a, b) {
 }
 
 function init () {
+  var num, A=[], img; 
+    
   total = 0;
   game++;
     
@@ -17,14 +19,13 @@ function init () {
 
 // Pick 4 crystal
    
-   var img = "assets/images/" + random(1,20) +".jpeg"
-   $("#btn1 img").attr("src", img);
-   var img = "assets/images/" + random(1,20) +".jpeg"
-   $("#btn2 img").attr("src", img);
-   var img = "assets/images/" + random(1,20) +".jpeg"
-   $("#btn3 img").attr("src", img);
-   var img = "assets/images/" + random(1,20) +".jpeg"
-   $("#btn4 img").attr("src", img);
+   for (var i=1; i <= 4; i++) {
+     do {num = random(1,20)} while(A.indexOf(num)>=0 );
+     A.push(num);
+     $("#btn" + i + " img" ).attr("src", "assets/images/" + num + ".jpeg");
+   }
+
+
    
    $("#game").text(game);
    target = random(19, 120);

@@ -2,13 +2,16 @@ ToDo:
   ==Done counting the number of games  as Game # 2:  Target number
   ==Done Keep the score of wins and losses
   ==Done add 4 crystals  or more than 4 to choose 
-  4. randomly pick 4 of 20 cristals (1.jpeg to  20.jpeg) 
+  ==Done  randomly pick 4 of 20 cristals (1.jpeg to  20.jpeg) 
   ==No Good Add jumbotron 
   * waiting for a few second
   * Change CSS color NOT working
   * Better design for phone player
-  * no smae crystals
+  (Done) no smae crystals
   * some crystals are not good looking
+  * Hit start a new game to start (hided when game is playing)
+  * Add your collection at the bottom
+
 
 
   2019-06-15: 20 images they should ahve same background.
