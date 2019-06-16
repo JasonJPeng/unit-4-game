@@ -5,15 +5,16 @@ ToDo:
   ==Done  randomly pick 4 of 20 cristals (1.jpeg to  20.jpeg) 
   ==No Good Add jumbotron 
   * waiting for a few second
-  * Change CSS color NOT working
+  * Change CSS color NOT working (maybe related to the refresh thongs)
   * Better design for phone player
   (Done) no smae crystals
   * some crystals are not good looking
   * Hit start a new game to start (hided when game is playing)
-  * Add your collection at the bottom
+  ==Done Add your collection at the bottom
 
 
 
   2019-06-15: 20 images they should ahve same background.
   2019-06-16: The basic graphic design is done
               different crystals every game
+              show my collections

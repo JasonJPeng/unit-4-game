@@ -22,9 +22,11 @@ function init () {
    for (var i=1; i <= 4; i++) {
      do {num = random(1,20)} while(A.indexOf(num)>=0 );
      A.push(num);
-     $("#btn" + i + " img" ).attr("src", "assets/images/" + num + ".jpeg");
-   }
 
+     // ex. => $("#btn1 img").attr("src", "assets/images/12.jpeg");
+     $("#btn" + i + " img" ).attr("src", "assets/images/" + num + ".jpeg");
+   
+   }
 
    
    $("#game").text(game);
@@ -52,9 +54,19 @@ var wins=0, losses=0, game = 0;
 init();
 console.log(btn1, btn2, btn3, btn4);
 
+
+
+
 $(".btn").on("click", function() {
    total += parseInt($(this).attr("user-data"));
    $("#total").text(total);
+// add to myCollection .....
+   var collectedImg = $('<img class="smallImg">');
+//    collectedImg.attr("src", "assets/images/1.jpeg");
+console.log($(this));
+   collectedImg.attr("src", $(this).children().attr("src"));
+   collectedImg.appendTo("#myCollection");
+
    
    if (total > target) { // Loss
     //   alert ("You lose !!");
