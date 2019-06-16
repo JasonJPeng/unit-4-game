@@ -8,7 +8,9 @@ function random(a, b) {
 
 function init () {
   total = 0;
-   
+  game++;
+    
+   $("#game").text(game);
    target = random(19, 120);
    $("#target").text(target);
    $("#total").text(total);
@@ -19,12 +21,14 @@ function init () {
    $("#btn2").attr("user-data", btn2);
    btn3 = random(1, 12);
    $("#btn3").attr("user-data", btn3);
-   btn4 = random(1,12);
+   btn4 = random(1,12)
    $("#btn4").attr("user-data", btn4);
+
 }
 
 
-var target, btn1, btn2, btn3, btn4, total;  
+var target, btn1, btn2, btn3, btn4, total;
+var wins=0, losses=0, game = 0;  
 
 init();
 console.log(btn1, btn2, btn3, btn4);
@@ -35,9 +39,11 @@ $(".btn").on("click", function() {
    
    if (total > target) { // Loss
       alert ("You lose !!");
+      $("#losses").text(++losses);
       init();
    } else if (total === target) { // win
       alert ("You win");
+      $("#wins").text(++wins);
       init();
 
    } // esle -- continue to play
