@@ -14,6 +14,17 @@ function init () {
     // $("#gameStatus").text("Starting...");
 //    }, 2000);
 
+
+// Pick 4 crystal
+   
+   var img = "assets/images/" + random(1,20) +".jpeg"
+   $("#btn1 img").attr("src", img);
+   var img = "assets/images/" + random(1,20) +".jpeg"
+   $("#btn2 img").attr("src", img);
+   var img = "assets/images/" + random(1,20) +".jpeg"
+   $("#btn3 img").attr("src", img);
+   var img = "assets/images/" + random(1,20) +".jpeg"
+   $("#btn4 img").attr("src", img);
    
    $("#game").text(game);
    target = random(19, 120);
@@ -48,12 +59,14 @@ $(".btn").on("click", function() {
     //   alert ("You lose !!");
       $("#gameStatus").text("Game Over");
       $("#winLoss").text("You Lost");
+      $("winLoss").css("color", "red");
       $("#losses").text(++losses);
       init();
    } else if (total === target) { // win
     //   alert ("You win");
       $("#gameStatus").text("Game Over");
       $("#winLoss").text("You Won");
+    //   $("winLoss").css("color: green"});
       $("#wins").text(++wins);
       init();
 

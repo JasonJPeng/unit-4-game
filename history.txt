@@ -4,7 +4,13 @@ ToDo:
   ==Done add 4 crystals  or more than 4 to choose 
   4. randomly pick 4 of 20 cristals (1.jpeg to  20.jpeg) 
   ==No Good Add jumbotron 
+  * waiting for a few second
+  * Change CSS color NOT working
+  * Better design for phone player
+  * no smae crystals
+  * some crystals are not good looking
 
 
   2019-06-15: 20 images they should ahve same background.
   2019-06-16: The basic graphic design is done
+              different crystals every game
