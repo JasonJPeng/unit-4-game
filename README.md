@@ -10,7 +10,13 @@ created 2019-06-14
  You win the game if the total score is equal to the target number.
  You lose th  game when the total score exceeds the target number.
 
- 
+ ---
+
+ All the crystals collected will be lost if you lost the game. 
+ The goal of this game is to maximize the **value** of your collection
+
+
+
 
     
 

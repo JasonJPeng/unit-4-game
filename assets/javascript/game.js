@@ -6,6 +6,8 @@ function random(a, b) {
    return  Math.floor(Math.random() * (b - a + 1)) + a;
 }
 
+
+
 function init () {
   var num, A=[], img; 
     
@@ -45,6 +47,7 @@ function init () {
 
    $("#gameStatus").text("Game Started");
 
+
 }
 
 
@@ -61,7 +64,7 @@ $(".btn").on("click", function() {
    total += parseInt($(this).attr("user-data"));
    $("#total").text(total);
 // add to myCollection .....
-   var collectedImg = $('<img class="smallImg">');
+   var collectedImg = $('<img class="smallImg" user-data="">');
 //    collectedImg.attr("src", "assets/images/1.jpeg");
 console.log($(this));
    collectedImg.attr("src", $(this).children().attr("src"));
@@ -74,6 +77,13 @@ console.log($(this));
       $("#winLoss").text("You Lost");
       $("winLoss").css("color", "red");
       $("#losses").text(++losses);
+
+// Remove all temperoty collections , which user-data = ""
+      
+      $(".smallImg").each(function(e) {
+          if ($(this).attr("user-data") === "")  $(this).remove()  ;  
+      })
+    
       init();
    } else if (total === target) { // win
     //   alert ("You win");
@@ -81,7 +91,14 @@ console.log($(this));
       $("#winLoss").text("You Won");
     //   $("winLoss").css("color: green"});
       $("#wins").text(++wins);
-      init();
+
+// Legalize all collections by changing user-data to "collected" 
+    
+     $(".smallImg").each(function (e) {
+         $(this).attr("user-data", "collected");
+     })
+
+    init();
 
    } // esle -- continue to play
 

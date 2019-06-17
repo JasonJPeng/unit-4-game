@@ -18,3 +18,6 @@ ToDo:
   2019-06-16: The basic graphic design is done
               different crystals every game
               show my collections
+
+  2019-06-17: remove reset.css as Zane suggested. No difference    
+              Only collect the crystals when you wan the game.         
