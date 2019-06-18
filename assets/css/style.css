@@ -40,3 +40,7 @@ p{
     object-fit: cover;
 
 }
+
+#winLoss, #gameStatus {
+    font-family: 'Abril Fatface', cursive;
+}

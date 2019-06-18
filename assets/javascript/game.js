@@ -46,6 +46,8 @@ function init () {
    $("#btn4").attr("user-data", btn4);
 
    $("#gameStatus").text("Game Started");
+   $("#winLoss").text("");
+   $("#winLoss,#gameStatus").css("color", "#ffffff");
 
 
 }
@@ -75,7 +77,7 @@ console.log($(this));
     //   alert ("You lose !!");
       $("#gameStatus").text("Game Over");
       $("#winLoss").text("You Lost");
-      $("winLoss").css("color", "red");
+      $("#winLoss,#gameStatus").css("color", "deeppink");
       $("#losses").text(++losses);
 
 // Remove all temperoty collections , which user-data = ""
@@ -83,13 +85,12 @@ console.log($(this));
       $(".smallImg").each(function(e) {
           if ($(this).attr("user-data") === "")  $(this).remove()  ;  
       })
-    
-      init();
+      setTimeout(init,2000);
    } else if (total === target) { // win
     //   alert ("You win");
       $("#gameStatus").text("Game Over");
       $("#winLoss").text("You Won");
-    //   $("winLoss").css("color: green"});
+      $("#winLoss,#gameStatus").css("color", "green");
       $("#wins").text(++wins);
 
 // Legalize all collections by changing user-data to "collected" 
@@ -98,7 +99,7 @@ console.log($(this));
          $(this).attr("user-data", "collected");
      })
 
-    init();
+     setTimeout(init,2000);
 
    } // esle -- continue to play
 

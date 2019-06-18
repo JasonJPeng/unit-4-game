@@ -1,6 +1,8 @@
 # Crystals Collector Game
 created 2019-06-14
 
+![ScreenShot](assets/images/ScreenShot.png)
+
 [demo video](https://www.youtube.com/watch?v=yNI0l2FMeCk&feature=youtu.be) 
 
 ## How to play the game ?
@@ -14,6 +16,9 @@ created 2019-06-14
 
  All the crystals collected will be lost if you lost the game. 
  The goal of this game is to maximize the **value** of your collection
+
+
+ [Click to Play The Game](https://jasonjpeng.github.io/unit-4-game/)
 
 
 
