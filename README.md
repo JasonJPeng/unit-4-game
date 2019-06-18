@@ -3,7 +3,8 @@ created 2019-06-14
 
 ![ScreenShot](assets/images/ScreenShot.png)
 
-[demo video](https://www.youtube.com/watch?v=yNI0l2FMeCk&feature=youtu.be) 
+
+[Watch the Demo](https://youtu.be/mGuicPZyt4E)
 
 ## How to play the game ?
   
